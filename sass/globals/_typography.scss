@@ -1,0 +1,24 @@
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 0;
+}
+h1 {
+    font-size: var(--display);
+}
+h2 {
+    font-size: var(--title);
+}
+h3 {
+    font-size: var(--subtitle);
+}
+h4 {
+    font-size: var(subtitle-h4);
+}
+p {
+    font-size: var(--paragraph);
+    margin-top: 0;
+}
+a, a:visited, a:active {
+    text-decoration: none;
+}

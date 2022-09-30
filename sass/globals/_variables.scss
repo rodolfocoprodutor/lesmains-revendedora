@@ -1,0 +1,52 @@
+/* Variables css*/
+:root{
+    /* Colors */
+    /* Color mode HSL(hue, saturation, lightness)*/
+    /*
+        blue    :   hsl(224, 69%, 14%)
+        red     :   hsl(0, 100%, 43%)
+        gray    :   hsl(0, 0%, 98%)
+        green   :   hsl(100, 83%, 41%)
+        yellow  :   HSL(52, 100%, 50%)
+    */
+
+    --hue: 203;
+    --sat: 100%;
+    --lig: 11%;
+
+    --brand-blue-dark: hsl(var(--hue), var(--sat), var(--lig)) ;
+    --brand-orange: hsl(22, 100%, 50%);
+    --title-color: hsl(212, 94%, 7%);
+    --text-color: hsl(212, 21%, 33%);
+    --bg-gradient: linear-gradient(105.88deg, #FF6651 0%, #F8377B 100%);
+    --container-color: #fff;
+    --attention-yellow: hsl(45, 100%, 48%);
+    --attention-red: hsl(358, 85%, 52%);
+    --attention-green: hsl(120, 61%, 50%);
+
+    /* Font and typography */
+    /* .5rem = 8px / 1rem = 16px */
+    --body-font: 'Poppins', sans-serif;
+    --display: 5.8rem;
+    --title: 3.8rem;
+    --subtitle: 2.9rem;
+    --subtitle-h4: 2.2rem;
+    --paragraph: 1.8rem;
+    --details: 1.6rem;
+    --smallest: 1.2rem;
+
+    /* Title center*/
+
+}
+
+/* Responsive typography */
+@media only screen and (orientation: portrait)  {
+    :root {
+        --display: 4.8rem;
+        --title: 3.2rem;
+        --subtitle: 1.9rem;
+        --paragraph: 1.6rem;
+        --details: 1.2rem;
+        --smallest: 1.0rem;
+    }
+}

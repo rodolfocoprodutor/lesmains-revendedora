@@ -1,0 +1,23 @@
+button {
+    padding: 1.6rem 3.2rem;
+    color: white;
+    border-radius: 0.8rem;
+    font-size: var(--body-text);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background: var(--brand-orange);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color .4s ease;
+    transition: box-shadow .4s ease;
+    box-shadow: 0px 1.25rem 40px -11px var(--brand-orange);
+
+    &:hover {
+        background-color: var(--brand-orange);
+        box-shadow: 0px 1.25rem 40px -11px var(--brand-orange);
+        color: #ffffff;
+    }
+
+}

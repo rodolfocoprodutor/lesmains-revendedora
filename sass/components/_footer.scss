@@ -1,0 +1,17 @@
+@use '../globals/variables';
+.disclaimer {
+    padding: 5rem 0;
+    background-color: var(--brand-blue-dark);
+
+    .cnpj {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.4rem;
+    }
+
+    p {
+        text-align: center;
+        color: white;
+        line-height: 3;
+    }
+}
