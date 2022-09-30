@@ -15,7 +15,7 @@ if (isset($_POST['enviar'])) {
 
     try {
         //Server settings
-        //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'mail.lesmains.com.br';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
@@ -26,7 +26,7 @@ if (isset($_POST['enviar'])) {
 
         //Recipients
         $mail->setFrom('revendedoras@lesmains.com.br', 'Mailer');
-        $mail->addAddress('revendedoras@lesmains.com.br', 'Joe User');     //Add a recipient
+        $mail->addAddress('revendedoras@lesmains.com.br', 'Lesmains');     //Add a recipient
         //$mail->addAddress('ellen@example.com');               //Name is optional
         $mail->addReplyTo('revendedoras@lesmains.com.br', 'Information');
         //$mail->addCC('cc@example.com');
@@ -40,15 +40,14 @@ if (isset($_POST['enviar'])) {
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = 'Here is the subject';
 
-        $body = "Mensagem enviada através do site <br>
-        Nome: ". $_POST['nome']."<br>
-        E-mail: ". $_POST['email']."<br>
-        Whatsapp: ". $_POST['whatsapp']."<br>
-        CEP: ". $_POST['cep']."<br>
-        Rua: ". $_POST['rua']."<br>
-        Número: ". $_POST['numero']."<br>
-        Cidade: ". $_POST['cidade']."<br>
-        Estado: ". $_POST['estado'];
+        $body = "Nome: ". $_POST['nome']."<br>";
+                "E-mail: ". $_POST['email']."<br>";
+                "Whatsapp: ". $_POST['whatsapp']."<br>";
+                "CEP: ". $_POST['cep']."<br>";
+                "Rua: ". $_POST['rua']."<br>";
+                "Número: ". $_POST['numero']."<br>";
+                "Cidade: ". $_POST['cidade']."<br>";
+                "Estado: ". $_POST['estado'];        
 
         $mail->Body    = $body;
         //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
