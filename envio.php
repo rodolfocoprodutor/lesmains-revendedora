@@ -11,15 +11,13 @@ $nome = utf8_encode($_POST['nome']);
 
 require 'vendor/autoload.php';
 
-$mail = new PHPMailer(true);
-$mail->isSMTP();
-
-$mail->Host       = 'mail.lesmains.com.br';
-$mail->SMTPSecure = "tls";
-$mail->Port       = 465;
-$mail->SMTPAuth   = true;
-$mail->Username   = 'revendedoras@lesmains.com.br';
-$mail->Password   = 'Za0ftaqr5qmT';
+$phpmailer = new PHPMailer();
+$phpmailer->isSMTP();
+$phpmailer->Host = 'smtp.mailtrap.io';
+$phpmailer->SMTPAuth = true;
+$phpmailer->Port = 2525;
+$phpmailer->Username = '127efe3c64258b';
+$phpmailer->Password = '3010d093d9e6c5';
 
 $mail->setFrom($mail->Username,"Lesmains");
 $mail->addAddress('revendedoras@lesmains.com.br');
